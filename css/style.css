@@ -69,7 +69,7 @@ div.container section#section2 {
 div.container section#section2 form {
   width: 80%;
   height: 80%;
-  padding: 3em;
+  padding: 48px;
   margin-top: 0;
   background-color: white;
 }
@@ -81,7 +81,7 @@ div.container section#section2 form table {
 
 div.container section#section2 form table .form-label {
   width: 50%;
-  padding: 0.3em 0;
+  padding: 0.9% 0;
 }
 
 div.container section#section2 form table .form-label input {
