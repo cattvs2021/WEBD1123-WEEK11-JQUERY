@@ -1,73 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Roboto:wght@100&display=swap");
 * {
-padding: 0;
-margin: 0;
-box-sizing: border-box;
-font-family: Roboto;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
 }
 div.container {
-    width: 100%;
-    height: 100vh;
-    background-color: antiquewhite;
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
-    section {
-        width: inherit;
-        height: inherit;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        h1 {
-            background-color: white;
-            width: 60%;
-            padding: 0.5em 48px;
-        }
-        p {
-            width: 60%;
+  width: 100%;
+  height: 100vh;
+  background-color: antiquewhite;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  section {
+    width: inherit;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    h1#title1 {
+      background-color: white;
+      width: 60%;
+      padding: 0.5em 48px;
+    }
+    p {
+      width: 60%;
+      color: white;
+      background-color: black;
+      padding: 3em;
+      a.myBTn {
+        color: white;
+        display: inline-block;
+        padding: 1em 2em;
+        margin-top: 1em;
+        border: none;
+        background-color: tan;
+        border-radius: 1em;
+        text-transform: uppercase;
+        border: 2px solid white;
+        cursor: pointer;
+        transition: all 200ms;
+        text-decoration: none;
+      }
+      a.myBTn:hover {
+        background-color: rgb(171, 146, 114);
+        border-color: 2px solid gray;
+      }
+    }
+  }
+}
+#section2 {
+  form {
+    #form-table {
+      background-color: rgb(0, 0, 0);
+      width: 960px;
+      padding: 2em;
+
+      tr {
+        padding: 1em 0;
+        td.form-label {
+          width: 50%;
+
+          .form-label-title {
             color: white;
-            background-color: black;
-            padding: 3em;
-            button#myBtn {
-                display: block;
-                padding: 1em 2em;
-                margin-top: 1em;
-                border: none;
-                background-color: tan;
-                border-radius: 1em;
-                text-transform: uppercase;
-                border: 2px solid white;
-                cursor: pointer;
-                transition: all 200ms;
-            }
-            button#myBtn:hover {
-                background-color: rgb(171, 146, 114);
-                border-color: gray;
-            }
+          }
+          .form-input {
+            width: 100%;
+            font-size: 1.5em;
+            padding: 0.075em 0;
+            margin: 8px 0;
+            border-radius: 0.25em;
+            border: none;
+            background-color: rgba(199, 199, 199, 0.8);
+            transition: background-color 500ms;
+          }
+          .form-input:focus {
+            background-color: white;
+          }
+          button.myBtn {
+            color: white;
+            display: block;
+            padding: 1em 2em;
+            margin-top: 1em;
+            border: none;
+            background-color: tan;
+            border-radius: 1em;
+            text-transform: uppercase;
+            border: 2px solid white;
+            cursor: pointer;
+            transition: all 200ms;
+          }
+          button.myBtn:hover {
+            background-color: rgb(171, 146, 114);
+            border-color: 2px solid gray;
+          }
         }
+      }
     }
-    section#section2 {
-        background-color: black;
-        form {
-            width: 80%;
-            height: 80%;
-            padding: 48px;
-            margin-top: 0;
-            background-color: rgb(255, 255, 255);
-            table {
-                width: 100%;
-                margin: 0 auto;
-                .form-label {
-                    width: 50%;
-                    padding: 0.9% 0;
-                    input {
-                        width: 80%;
-                        height: 30px;
-                    }
-                }
-            }
-        }
-
-
-    }
+  }
 }

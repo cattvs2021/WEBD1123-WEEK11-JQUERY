@@ -1,9 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Roboto:wght@100&display=swap");
 * {
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: Roboto;
+  font-family: "Montserrat", sans-serif;
 }
 
 div.container {
@@ -30,7 +31,7 @@ div.container section {
           flex-direction: column;
 }
 
-div.container section h1 {
+div.container section h1#title1 {
   background-color: white;
   width: 60%;
   padding: 0.5em 48px;
@@ -43,7 +44,63 @@ div.container section p {
   padding: 3em;
 }
 
-div.container section p button#myBtn {
+div.container section p a.myBTn {
+  color: white;
+  display: inline-block;
+  padding: 1em 2em;
+  margin-top: 1em;
+  border: none;
+  background-color: tan;
+  border-radius: 1em;
+  text-transform: uppercase;
+  border: 2px solid white;
+  cursor: pointer;
+  -webkit-transition: all 200ms;
+  transition: all 200ms;
+  text-decoration: none;
+}
+
+div.container section p a.myBTn:hover {
+  background-color: #ab9272;
+  border-color: 2px solid gray;
+}
+
+#section2 form #form-table {
+  background-color: black;
+  width: 960px;
+  padding: 2em;
+}
+
+#section2 form #form-table tr {
+  padding: 1em 0;
+}
+
+#section2 form #form-table tr td.form-label {
+  width: 50%;
+}
+
+#section2 form #form-table tr td.form-label .form-label-title {
+  color: white;
+}
+
+#section2 form #form-table tr td.form-label .form-input {
+  width: 100%;
+  font-size: 1.5em;
+  padding: 0.075em 0;
+  margin: 8px 0;
+  border-radius: 0.25em;
+  border: none;
+  background-color: rgba(199, 199, 199, 0.8);
+  -webkit-transition: background-color 500ms;
+  transition: background-color 500ms;
+}
+
+#section2 form #form-table tr td.form-label .form-input:focus {
+  background-color: white;
+}
+
+#section2 form #form-table tr td.form-label button.myBtn {
+  color: white;
   display: block;
   padding: 1em 2em;
   margin-top: 1em;
@@ -57,35 +114,8 @@ div.container section p button#myBtn {
   transition: all 200ms;
 }
 
-div.container section p button#myBtn:hover {
+#section2 form #form-table tr td.form-label button.myBtn:hover {
   background-color: #ab9272;
-  border-color: gray;
-}
-
-div.container section#section2 {
-  background-color: black;
-}
-
-div.container section#section2 form {
-  width: 80%;
-  height: 80%;
-  padding: 48px;
-  margin-top: 0;
-  background-color: white;
-}
-
-div.container section#section2 form table {
-  width: 100%;
-  margin: 0 auto;
-}
-
-div.container section#section2 form table .form-label {
-  width: 50%;
-  padding: 0.9% 0;
-}
-
-div.container section#section2 form table .form-label input {
-  width: 80%;
-  height: 30px;
+  border-color: 2px solid gray;
 }
 /*# sourceMappingURL=style.css.map */
